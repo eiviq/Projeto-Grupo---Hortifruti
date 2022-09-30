@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Document</title>
+  <style>
+    body {
+      overflow: hidden;
+     
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+
+    <div class="navbar">
+      <!--CONFIGURAÇÃO LOGO-->
+      <div class="logo">
+        <a href="index.html"><img id="imglogo" src="img/imgLogo/logo.png" alt=""></a>
+      </div>
+      
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quemsomos.html">Quem Somos</a></li>
+          <div class="menudrop">
+            <li><a href="produtos.html" class="btnDrop" onclick="mostrarDrop()">Produtos</a>
+              <div class="conteudo_drop">
+                <a href="#frutas"> Frutas </a>
+                <a href="#legumes"> Legumes </a>
+                <a href="#verduras"> Verduras</a>
+                <a href="#padaria"> Padaria</a>
+                <a href="#bebidas"> Bebidas</a>
+                <a href="#congelados"> Congelados </a>
+              </div>
+
+            </li>
+          </div>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="equipe.html">Nossa Equipe</a></li>
+          <li><a href="receitas.html">Receitas</a></li>
+        </ul>
+      </div>
+
+  </header>
+
+
+
+  <section>
+    <div class="container1">
+      <div class="texto">
+        <h2 id="animacao1">O melhor do <br> <span>Hortifruti</span><br> você encontra aqui</h2>
+      </div>
+    </div>
+
+    <div class="circle"> </div>
+    <div class="imgFrutas" id="animacao">
+      <img src="img/imgFundo/fundo3.png" alt="" id="img1">
+    </div>
+  </section>
+
+
+  <h2 style="text-align: center;margin-top: 10px; font-size: 45px; color: black; padding: 10px 20px;"></h2>
+
+  <!-- VLibras CÓDIGO UTILIZADO  - GOV.COM-->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+
+</html>

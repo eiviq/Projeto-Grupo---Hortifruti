@@ -1,0 +1,1158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CONFIGURAÇAO HOME DÉBORA */
+section .container1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e4738;
+    clip-path: circle(50% at bottom right);
+}
+
+
+/*menu*/
+
+.navbar {
+    background-color: #f18517;
+    height: 80px;
+
+}
+
+ul {
+    list-style: none;
+    margin-top: 30px;
+
+}
+
+li {
+    display: inline;
+
+
+}
+
+.textoPiscando,
+.textoPiscando a {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 0.5em;
+    animation: piscaPisca 1.5s infinite;
+    background-color: white;
+}
+
+@keyframes piscaPisca {
+    50% {
+        color: white;
+    }
+
+    50% {
+        color: #3CB371;
+    }
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.menu {
+    display: block;
+    float: left;
+    margin-left: 300px;
+
+}
+
+
+#imglogo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: -60px;
+    float: left;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container1 .texto {
+    position: relative;
+    margin-right: 20px;
+}
+
+.container1 .texto h2 {
+    color: #1e4738;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 600;
+}
+
+.container1 .texto h2 span {
+    font-size: 3.5em;
+    color: #e19e06;
+
+}
+
+.container1 .texto a {
+    display: inline-block;
+    margin-top: 300px;
+    padding: 10px 25px;
+    background-color: #54373a;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.imgFrutas {
+    position: fixed;
+    right: 0;
+    bottom: -150px;
+}
+
+.imgFrutas img {
+    width: 65vh;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+/*fruta*/
+#animacao {
+    opacity: 0;
+    transform: translateY(300px);
+    animation: moveup 0.8s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*texto*/
+#animacao1 {
+    opacity: 0;
+    transform: translateX(-600px);
+    animation: moveup 1s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+/****** PÁGINA DE CONTATO FRAN *******/
+.contato {
+    margin-top: 50px;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2F3DA;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .contato {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-title h6 {
+        margin: 0;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+
+/******* ESTILO RODAPÉ FRAN ***********/
+
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #54373a;
+    margin-top: 20px;
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Goudy Bookletter 1911', serif;
+
+    
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background:green;
+    top: -10px;
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: white;
+    top: -10px;
+    
+   
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 2px;
+}
+.left .content .social a span{
+    width: 40px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+    
+    
+    
+   
+}
+.left .content .social a span:hover{
+    background:green;
+}
+.left .content p{
+    text-align: justify;
+    color: white;
+
+
+}
+.center .content .fas{
+    font-size: 23px;
+    background:white;
+    width: 45px;
+    height: 45px ;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Goudy Bookletter 1911', serif;
+
+    
+}
+.center .content .fas:hover{
+    background: green;
+}
+.center .content .text{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Goudy Bookletter 1911', serif;
+
+}
+.center .content .phone{
+    margin: 10px 0;
+}
+.center .content .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 17px;
+    background: white;
+    padding-left: 10px;
+    border: 1px solid #222222;
+    
+}
+.right form input{
+    height: 35px;
+}
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form .text{
+    font-size: 17px;
+    margin-bottom: 2px;
+    color: white;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btn button:hover{
+    background: green;
+}
+.bottom .center{
+    padding: 5px;
+    font-size: 15px;
+    background: gray;
+    text-align: center;
+    opacity: 50%;
+}
+.bottom .center span{
+    color: white;
+}
+.bottom .center a{
+    color:green;
+    text-decoration: none;
+}
+.bottom .center a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px){
+    footer{
+        position: fixed;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+}
+
+/* Estilização do cabeçalho */
+
+.cabecalho {
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+
+}
+
+#nossaequipe {
+    font-size: 3rem;
+    color: black;
+    padding-top: 2rem;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 4rem;
+
+}
+
+
+
+ /* Estilizações container geral | Vicky */
+ .container-geral{
+    background-color: aliceblue;
+    padding-bottom: 1rem;
+ }
+
+
+/* estilização primeiro container| Vicky */
+
+.primeiralinha{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 7rem;
+    padding-top: 2rem;
+    
+}
+
+/* estilização imagem e texto primeiro container| Vicky */
+
+.primeiraimagem{
+
+    display: flex;
+    margin-right: 7rem;
+    box-shadow: 0.9rem 1rem 1rem orangered;
+    height: 20rem;
+    width: 20rem;
+}
+
+#primeirotexto{
+    margin-top: 3rem;
+    text-align: center;
+    width: 70%;
+    height: 50%;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+/* estilização segundo container| Vicky */
+
+.segundalinha{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+/* estilização imagem e texto segundo container| Vicky */
+
+.segundaimagem{
+
+    display: flex;
+    margin-right: 7rem;
+    box-shadow: 1.1rem 1rem 1rem green;
+    height: 20rem;
+    width: 20rem;
+
+}
+
+#segundotexto{
+    margin-top: 3rem;
+    text-align: center;
+    width: 70%;
+    height: 50%;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+/* estilização terceiro container| Vicky */
+
+.terceiralinha{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+/* estilização imagem e texto terceiro container| Vicky */
+
+.terceiraimagem{
+
+    display: flex;
+    margin-right: 7rem;
+    box-shadow: 1.5rem 1rem 1rem goldenrod;
+    height: 20rem;
+    width: 20rem;
+
+}
+
+#terceirotexto{
+    margin-top: 3rem;
+    text-align: center;
+    width: 70%;
+    height: 50%;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+/* estilização quarto container| Vicky */
+
+.quartalinha{
+    display:flex;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+/* estilização imagem e texto quarto container| Vicky */
+
+.quartaimagem{
+
+    display: flex;
+    margin-right: 7rem;
+    box-shadow: 1.5rem 1rem 1rem red;
+    height: 20rem;
+    width: 20rem;
+
+}
+
+#quartotexto{
+    margin-top: 3rem;
+    text-align: center;
+    width: 70%;
+    height: 50%;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    
+}
+
+/* Estilização do cabeçalho | Vicky */
+.topo{
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 10rem;
+ }
+
+ #quemsomos{
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: black;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 4rem;
+    
+    
+ }
+
+/* Estilizações imagens e textos  | Vicky */
+
+
+ .containergeral{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    background-color: aliceblue;
+ }
+
+.container1{
+    display: flex;
+    width: 100%;
+    height: 30rem;
+    flex-direction: row;
+    margin-top: 5rem;
+    gap: 15rem;
+
+}
+
+#fotosuperior{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    margin-right: 7rem;
+    box-shadow: 1.5rem 1rem 1rem black;
+}
+
+
+.texto1{
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    margin-left: 4rem;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+#titulo1{
+    text-align: center;
+    font-style: italic;
+
+}
+
+#texto1{
+    font-weight: normal;
+    font-size: 1.7rem;
+    width:110%;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    font-family: 'Goudy Bookletter 1911', serif;
+
+
+}
+
+
+.container2{
+    display: flex;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    padding-bottom: 8rem;
+    width: 100%;
+    height: 30rem;
+    flex-direction: row;
+    gap: 15rem;
+
+}
+
+#fotoinferior{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    margin-left: 7rem;
+    box-shadow: -1rem 1rem 1rem black;
+
+
+}
+
+.texto2{
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    margin-right: 4rem;
+    font-family: 'Gentium Book Basic', serif;
+    
+}
+
+#titulo2{
+    text-align: left;
+    font-style: italic;
+    margin-right: 4rem;
+}
+
+#texto2{
+    display: flex;
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.7rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+/* Formatacao carrosel */
+
+
+.carrosel {
+    height: 100%;
+    width: 100%;
+   overflow:hidden;
+    box-shadow: 5px 3px 5px rgb(16, 16, 15);
+    margin: 30px;
+    justify-content: center;
+
+}
+
+.carrosel ul {
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 250px;
+
+    
+
+}
+
+.carrosel li {
+    position: relative;
+    animation: animacao 15s infinite ease-out;
+}
+
+
+@keyframes animacao {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+
+/* Personalização catalogo frutas */
+
+
+
+.titulo {
+    text-align: center;
+    margin-top: 60px;
+    color: #151515;
+    background-color: aliceblue;
+
+}
+
+p {
+    text-align: center;
+
+}
+
+.row {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: center;
+
+
+}
+
+.col {
+
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+    border-radius: 15px;
+
+}
+
+.col img {
+    height: 150px;
+    width: 150px;
+     margin: 30px;
+
+}
+
+
+.col:hover {
+    transition: background 1s;
+    cursor: pointer;
+}
+
+
+
+
+#btn1 {
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1e4738;
+    width: 150px;
+    height: 40px;
+    display: block;
+  
+}
+
+#btn2 {
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff7c70;
+    width: 150px;
+    height: 40px;
+   
+
+}
+
+
+#btn1:hover {
+    background-color: greenyellow;
+    color: #1e4738;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+#btn2:hover {
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    transition: background 1s;
+
+}
+#descp{
+    font-size: 20px;
+}
+#preço{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*CONFIGURAÇÃO JANELA MODAL CARRINHO*/
+a {
+    text-decoration: none;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    place-content: center;
+    visibility: hidden;
+}
+
+.titulo_modal {
+    background-color: #1e4738;
+}
+
+.titulo_modal h2 {
+    padding: 10px;
+    float: left;
+
+}
+
+.titulo_modal a {
+    color: #fff;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: right;
+}
+
+#mostrar {
+    font-size: 50px;
+    text-align: center;
+}
+
+.modal_carrinho p {
+    text-align: center;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.modal_carrinho {
+    background-color: #F8F8FF;
+    width: 400px;
+    padding: 2rem 2rem 1rem;
+    border-radius: 4px;
+
+}
+
+#botao1 {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1e4738;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#botao2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff7c70;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.car {
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 40px;
+}
+
+/* FIM CONFIGURAÇÃO JANELA MODAL CARRINHO*/
+
+
+
+
+
+/*drop*/
+
+.menudrop {
+    position: relative;
+    display: inline-block;
+}
+
+.conteudo_drop {
+
+    margin-top: 25px;
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.conteudo_drop a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.conteudo_drop a:hover {
+    background-color: #1e4738;
+    color: #fff;
+
+}
+
+.mostrarDrop {
+    display: block;
+}
+ /*PÁGINA RECEITAS*/
+.franqueado {
+    
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding: 70px 5%;
+    color: rgb(20, 20, 20);
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 1.5rem;
+
+    
+background-position: center;
+background-size: cover ;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+.franqueado h1{
+    margin-bottom: 20px;
+    
+}
+
+section:nth-of-type(1) {
+    background-image: url(/img/imgReceitas/fundo1.jpg)
+}
+
+section:nth-of-type(3) {
+    background-image: url(/img/imgReceitas/bolo-laranja.jfif);
+
+}
+section:nth-of-type(5) {
+    background-image: url(/img/imgReceitas/ratatouille-min.jpg);
+
+}
+
+
+section:nth-of-type(7) {
+    background-image: url(/img/imgReceitas/suco\ verde.jpg);
+
+}
+
